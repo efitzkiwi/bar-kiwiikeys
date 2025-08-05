@@ -309,32 +309,43 @@ bind           Alt+sc_]  blueprint_next
 bind           Alt+sc_g  factoryqueuemode
 
 
-
-unbind space
-unbind Ctrl+x
+unbind Ctrl+sc_x
 unbind 1
 unbind 2
 unbind 3
-unbind Alt+q
+unbind Alt+sc_q
 unbind Shift+1
 unbind Shift+2
 unbind Shift+3
+unbind Alt+sc_a
+unbind Shift+Alt+sc_a
+unbind sc_q
+unbind Shift+sc_q
+unbind sc_e
+unbind Shift+sc_e
+unbind sc_d
+unbind Shift+sc_d
+unbind sc_z
+unbind Shift+sc_z
+
+unbind sc_w
 
 
 
 
-bind                space  select AllMap+_ManualFireUnit+_ClearSelection_SelectOne+ // select commander
-bind           Ctrl+x  select Visible+_InPrevSel+_SelectAll+ // select visible units of same type
-bind                Alt+q  select Visible+_Builder_Idle+_ClearSelection_SelectOne+ // select idle engineers on screen
 
-bind             1  select AllMap+_Builder_Building_Idle+_ClearSelection_SelectOne+ // select idle factories
-bind             Shift+1  select AllMap+_Builder_Building+_ClearSelection_SelectOne+ // selects all factories
 
-bind             2  select Visible+_Not_Aircraft_Not_Building_Weapons+_ClearSelection_SelectAll+ // select visible ground units with a weapon
-bind             Shift+2  select AllMap+_Not_Aircraft_Not_Building_Weapons+_ClearSelection_SelectAll+ // select all ground units with a weapon
+bind           Ctrl+sc_x  select  Visible+_InPrevSel+_SelectAll+ // select visible units of same type
+bind                Alt+sc_q  select  Visible+_Builder_Not_Building_Idle+_ClearSelection_SelectAll+ // select idle engineers on screen
 
-bind             3  select Visible+_Not_Builder_Aircraft+_ClearSelection_SelectAll+ // Air on visible map
-bind             Shift+3  select AllMap+_Not_Builder_Aircraft+_ClearSelection_SelectAll+ // Air on all map
+bind             1  select  AllMap+_Builder_Building_Idle+_ClearSelection_SelectOne+ // select idle factories
+bind             Shift+1  select  AllMap+_Builder_Building+_ClearSelection_SelectOne+ // selects all factories
+
+bind             2  select  Visible+_Not_Aircraft_Not_Building_Weapons_Not_ManualFireUnit+_ClearSelection_SelectAll+ // select visible ground units with a weapon
+bind             Shift+2  select  AllMap+_Not_Aircraft_Not_Building_Weapons_Not_ManualFireUnit+_ClearSelection_SelectAll+ // select all ground units with a weapon
+
+bind             3  select  Visible+_Not_Builder_Aircraft+_ClearSelection_SelectAll+ // Air on visible map
+bind             Shift+3  select  AllMap+_Not_Builder_Aircraft+_ClearSelection_SelectAll+ // Air on all map
 
 
 bind               Alt+sc_a  manualfire
@@ -355,5 +366,4 @@ bind         Shift+sc_d  unloadunits
 bind               sc_z  reclaim
 bind         Shift+sc_z  reclaim
 
-
-
+bind sc_w armmex
